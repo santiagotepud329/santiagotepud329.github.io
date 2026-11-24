@@ -30,6 +30,7 @@
             color: white;
         }
     </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -58,41 +59,50 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 
-                <h1 class="display-5 fw-normal mb-4">Mis Proyectos</h1>
+                <span class="badge text-bg-primary mb-3 px-3 py-2">
+                    <i class="fa-solid fa-folder-open me-2"></i>Portafolio
+                </span>
+                <h1 class="display-5 fw-bold page-heading mb-4">Mis Proyectos</h1>
 
                 <!-- Grilla de Proyectos (alineada como en el mockup) -->
                 <div class="row g-4 mt-2">
                     
                     <!-- Proyecto 1 -->
-                    <div class="col-md-5">
-                        <h2 class="h4 fw-normal">Vía 360</h2>
-                        <p class="text-muted">Aplicación enfocada en incidentes viales.</p>
-                        <button type="button" 
-                                class="btn btn-primary btn-ver-proyecto"
-                                data-bs-toggle="modal" 
-                                data-bs-target="#proyectoModal"
-                                data-titulo="Vía 360"
-                                data-descripcion="Aplicación enfocada en incidentes viales."
-                                data-tecnologias=""
-                                data-github="https://github.com/Jerson570/Via360">
-                            Ver Detalles
-                        </button>
+                    <div class="col-md-6">
+                        <article class="project-card">
+                            <span class="project-icon"><i class="fa-solid fa-road"></i></span>
+                            <h2 class="h4">Vía 360</h2>
+                            <p class="text-muted">Aplicación enfocada en incidentes viales.</p>
+                            <button type="button"
+                                    class="btn btn-primary btn-ver-proyecto"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#proyectoModal"
+                                    data-titulo="Vía 360"
+                                    data-descripcion="Aplicación enfocada en incidentes viales."
+                                    data-tecnologias=""
+                                    data-github="https://github.com/Jerson570/Via360">
+                                <i class="fa-solid fa-circle-info me-2"></i>Ver Detalles
+                            </button>
+                        </article>
                     </div>
 
                     <!-- Proyecto 2 -->
-                    <div class="col-md-5">
-                        <h2 class="h4 fw-normal">Astroplay</h2>
-                        <p class="text-muted">Juego educativo para aprender astronomía.</p>
-                        <button type="button" 
-                                class="btn btn-primary btn-ver-proyecto"
-                                data-bs-toggle="modal" 
-                                data-bs-target="#proyectoModal"
-                                data-titulo="Astroplay"
-                                data-descripcion="Juego educativo que enseña astronomía."
-                                data-tecnologias=""
-                                data-github="">
-                            Ver Detalles
-                        </button>
+                    <div class="col-md-6">
+                        <article class="project-card">
+                            <span class="project-icon"><i class="fa-solid fa-rocket"></i></span>
+                            <h2 class="h4">Astroplay</h2>
+                            <p class="text-muted">Juego educativo para aprender astronomía.</p>
+                            <button type="button"
+                                    class="btn btn-primary btn-ver-proyecto"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#proyectoModal"
+                                    data-titulo="Astroplay"
+                                    data-descripcion="Juego educativo que enseña astronomía."
+                                    data-tecnologias=""
+                                    data-github="">
+                                <i class="fa-solid fa-circle-info me-2"></i>Ver Detalles
+                            </button>
+                        </article>
                     </div>
 
                 </div>
