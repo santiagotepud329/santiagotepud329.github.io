@@ -52,14 +52,15 @@
                                 <span class="project-number">01 / PROYECTO</span>
                             </div>
                             <h2>Vía 360</h2>
-                            <p>Aplicación enfocada en incidentes viales.</p>
+                            <p>Plataforma web colaborativa para mejorar la gestión de la movilidad urbana en Medellín y el Valle de Aburrá.</p>
                             <button type="button"
                                     class="btn btn-project-link btn-ver-proyecto"
                                     data-bs-toggle="modal"
                                     data-bs-target="#proyectoModal"
                                     data-titulo="Vía 360"
-                                    data-descripcion="Aplicación enfocada en incidentes viales."
-                                    data-tecnologias=""
+                                    data-descripcion="Plataforma web diseñada para la gestión colaborativa de la movilidad urbana en Medellín y el Valle de Aburrá. Conecta a ciudadanos y autoridades para agilizar la atención de incidentes en la vía pública."
+                                    data-caracteristicas='[{"titulo":"Reportes ciudadanos","detalle":"Registro de huecos, daños viales, accidentes de tránsito, semáforos averiados y fallas de señalización."},{"titulo":"Gestión y roles","detalle":"Panel de control para autoridades y administración diferenciada por perfiles: ciudadano, autoridad y administrador."},{"titulo":"Gamificación","detalle":"Sistema de puntos por participación ciudadana (sin dinero real)."}]'
+                                    data-tecnologias="C#, ASP.NET, Oracle Database, Visual Studio 2022, GitHub, Scrum"
                                     data-github="https://github.com/Jerson570/Via360">
                                 Ver detalles <i class="fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i>
                             </button>
@@ -73,15 +74,16 @@
                                 <span class="project-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></span>
                                 <span class="project-number">02 / PROYECTO</span>
                             </div>
-                            <h2>Astroplay</h2>
-                            <p>Juego educativo para aprender astronomía.</p>
+                            <h2>AstroPlay</h2>
+                            <p>Plataforma web interactiva para aprender sobre el sistema solar, constelaciones y cuerpos celestes mediante retos lúdicos.</p>
                             <button type="button"
                                     class="btn btn-project-link btn-ver-proyecto"
                                     data-bs-toggle="modal"
                                     data-bs-target="#proyectoModal"
-                                    data-titulo="Astroplay"
-                                    data-descripcion="Juego educativo que enseña astronomía."
-                                    data-tecnologias=""
+                                    data-titulo="AstroPlay"
+                                    data-descripcion="AstroPlay es una plataforma web interactiva diseñada para enseñar conceptos sobre el sistema solar, constelaciones y cuerpos celestes a través de retos lúdicos e interfaz temática."
+                                    data-caracteristicas='[{"titulo":"Minijuegos educativos","detalle":"Concéntrese galáctico (memoria de planetas y nebulosas), Ahorcado espacial con pistas y Trivia cósmica contra reloj."},{"titulo":"Aprendizaje y progreso","detalle":"Fichas informativas desbloqueables al ganar y sistema de niveles dinámicos, de Cadete a Astrofísico."}]'
+                                    data-tecnologias="HTML5, CSS3, Bootstrap 5, JavaScript, jQuery, Font Awesome"
                                     data-github="">
                                 Ver detalles <i class="fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i>
                             </button>
@@ -109,8 +111,13 @@
                     <p id="modalDescripcion" class="text-muted mb-4">
                     </p>
 
+                    <h6 id="modalCaracteristicasTitulo" class="fw-bold text-dark mb-2">
+                        <i class="fa-solid fa-list-check text-primary me-1"></i> Características principales
+                    </h6>
+                    <ul id="modalCaracteristicas" class="modal-feature-list mb-4"></ul>
+
                     <h6 id="modalTecnologiasTitulo" class="fw-bold text-dark mb-2">
-                        <i class="fa-solid fa-layer-group text-primary me-1"></i> Tecnologías Utilizadas
+                        <i class="fa-solid fa-layer-group text-primary me-1"></i> Tecnologías y metodología
                     </h6>
                     <div id="modalTecnologias" class="d-flex flex-wrap gap-2 mb-3">
                         <!-- Los badges de tecnologías se insertan aquí vía jQuery -->

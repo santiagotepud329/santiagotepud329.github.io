@@ -634,6 +634,30 @@ main.container.page-shell {
     color: var(--color-ink) !important;
 }
 
+.modal-feature-list {
+    display: grid;
+    gap: 0.65rem;
+    padding: 0;
+    list-style: none;
+}
+
+.modal-feature-list li {
+    display: grid;
+    gap: 0.25rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.8rem;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 0.86rem;
+    line-height: 1.65;
+}
+
+.modal-feature-list strong {
+    color: var(--color-ink);
+    font-size: 0.88rem;
+}
+
 .modal-footer {
     border-color: var(--color-border);
     background: #fbfdfd;

@@ -35,6 +35,7 @@ $(function() {
                     return technology.trim();
                 })
                 .filter(Boolean);
+            const features = $trigger.data('caracteristicas') || [];
             const githubUrl = $trigger.data('github') || '';
 
             $('#proyectoModalLabel').text($trigger.data('titulo') || 'Detalles del proyecto');
@@ -42,6 +43,17 @@ $(function() {
             $('#modalGithubLink')
                 .attr('href', githubUrl || '#')
                 .toggle(Boolean(githubUrl));
+
+            const $featuresTitle = $('#modalCaracteristicasTitulo');
+            const $featureList = $('#modalCaracteristicas').empty();
+            $featuresTitle.toggle(features.length > 0);
+
+            $.each(features, function(index, feature) {
+                const $item = $('<li>');
+                $('<strong>').text(feature.titulo).appendTo($item);
+                $('<span>').text(feature.detalle).appendTo($item);
+                $item.appendTo($featureList);
+            });
 
             const $technologyTitle = $('#modalTecnologiasTitulo');
             const $technologyContainer = $('#modalTecnologias').empty();
